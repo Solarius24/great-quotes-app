@@ -1,9 +1,9 @@
 import { useRef, useEffect } from 'react';
 
-import useHttp from '../../hooks/use-http';
-import { addComment } from '../../lib/api';
-import LoadingSpinner from '../UI/LoadingSpinner';
-import classes from './NewCommentForm.module.css';
+import useHttp from 'hooks/use-http';
+import { addComment } from 'lib/api';
+import LoadingSpinner from 'components/UI/LoadingSpinner';
+import classes from 'components/comments/NewCommentForm.module.css';
 
 const NewCommentForm = (props) => {
   const commentTextRef = useRef();
