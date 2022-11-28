@@ -1,8 +1,9 @@
-const FIREBASE_DOMAIN = 'https://react-complete-7681e-default-rtdb.firebaseio.com';
+const FIREBASE_DOMAIN = 'https://udemy-modern-javascript-709a4-default-rtdb.europe-west1.firebasedatabase.app/'
 
 export async function getAllQuotes() {
   const response = await fetch(`${FIREBASE_DOMAIN}/quotes.json`);
   const data = await response.json();
+console.log(data)
 
   if (!response.ok) {
     throw new Error(data.message || 'Could not fetch quotes.');

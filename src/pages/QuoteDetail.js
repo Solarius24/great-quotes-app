@@ -10,6 +10,7 @@ const QuoteDetail = () => {
   const params = useParams();
 
   const { quoteId } = params;
+  console.log(params)
 
   const { sendRequest, status, data: loadedQuote, error } = useHttp(
     getSingleQuote,
